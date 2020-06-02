@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+        
+        <h2>API Methods</h2>
+        <input id="set-by-method" type="checkbox" /><br>
+        <br>
+        
+    </div>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="/js/jquery.tristate.js"></script>
+    <script>
+   
+
+    function output(state, value) {
+        $('#tristate-value').text(value);
+    }
+    var $tristate = $('#tristate').tristate({
+        checked: "1",
+        unchecked: "2",
+        indeterminate: "0",
+
+        init: output,
+        change: output
+    });
+    var $tristate = $('#set-by-method').tristate();
+
+    $('#doJqClick').click(function() {
+        $tristate.click();
+    });
+    $('#doJsClick').click(function() {
+        $tristate.get(0).click();
+    });
+    $('#setIndeterminate').click(function() {
+        $tristate.tristate('state', null);
+    });
+    $('#setChecked').click(function() {
+        $tristate.tristate('state', true);
+    });
+    $('#setUnchecked').click(function() {
+        $tristate.tristate('state', false);
+    });
+    </script>
+</body>
+</html>

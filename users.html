@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="js/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="">
+        <nav class="navbar navbar-light">
+            <a href="" title="">Truyện tranh</a>
+        </nav>
+        <div class="row">
+            <nav id="sidebar">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                </div>
+                <h1><a href="index.html" class="logo">Project Name</a></h1>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#"><span class="fa fa-home mr-3"></span> Homepage</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-user mr-3"></span> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-sticky-note mr-3"></span> Friends</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-sticky-note mr-3"></span> Subcription</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-9">
+                <div class="tab-content" style="height: 100%; " id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="row">
+                            <div class="form-info col-md-8">
+                                <div class="title" style="padding-bottom: 20px;">
+                                    <h2>Thông tin tài khoản</h2>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input class="form-control" type="text" name="" value="" placeholder="" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Họ tên</label>
+                                        <input class="form-control" type="text" name="" value="" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-success" name="" value="Lưu">
+                                    </div>
+                                    <h2 style="padding-top: 20px;">Đổi mật khẩu</h2>
+                                    <div class="form-group" style="padding-top: 20px">
+                                        <label>Mật khẩu hiện tại</label>
+                                        <input class="form-control" type="password" name="" value="" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mật khẩu mới </label>
+                                        <input type="password" class="form-control" name="" value="" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-success" name="" value="Lưu">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="user-right col-md-3">
+                                <div class="img">
+                                    <img src="resourse/image/62-622819_photo-wallpaper-naruto-anime-art-hyuuga-hinata-naruto.jpg" alt="" width="160px" height="160px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="container-fluid" style="padding-left: 50px; padding-top: 20px;">
+                            <div class="title" style="padding-bottom: 20px;">
+                                <h2>Quản lý chuyện</h2>
+                            </div>
+                            <div class="row">
+                                <table class="table-responsive">
+                                    <tr>
+                                        <td>Id</td>
+                                        <td>Tên chuyện</td>
+                                        <td>Chương cuối</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-qlchuyen" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="container-fluid" style="padding-left: 50px; padding-top: 20px;">
+                            <div class="row">
+                                <form class="form-group embed-responsive">
+                                    <div class="title">
+                                        <h2>Đăng chuyện</h2>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="file" name="" class="btn btn-success" value="" placeholder="Chọn chuyện">
+                                    </div>
+                                    <div class="">
+                                        <input type="submit" class="btn btn-success" name="" value="Đăng">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-kiemduyet" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                    <div class="tab-pane fade" id="v-pills-comments" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <div class="container-fluid" style="padding-left: 50px; padding-top: 20px;">
+                            <div class="title">
+                                <h2>Lịch Sử Bình Luận</h2>
+                            </div>
+                            <div class="row table-responsive">
+                                <table class="form-group" style="margin-top:  20px; text-align: center;">
+                                    <tr>
+                                        <td>Id</td>
+                                        <td>Tên</td>
+                                        <td>Bình luận</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                        <td><input type="text" name="" value="" placeholder=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
